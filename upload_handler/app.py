@@ -16,9 +16,6 @@ REGION = 'us-east-1'
 
 def upload_handler(event, context):
     caminho = "./img.csv"
-    # Variaveis Globais
-    pos=(10,100)
-    opacity = 100
     with open(caminho, "r") as imgs:
         imgcsv = csv.reader(imgs, delimiter=",")
         for coluna in imgcsv:
